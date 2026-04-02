@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg-top: #fffaf0;
+  --bg-mid: #f4efe6;
+  --bg-bottom: #ebe3d6;
+  --text-color: #1f2a30;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg-top: #0a0f12;
+  --bg-mid: #06090a;
+  --bg-bottom: #020304;
+  --text-color: #f0f4f8;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, var(--bg-top) 0%, var(--bg-mid) 45%, var(--bg-bottom) 100%);
+  color: var(--text-color);
+  font-family: Georgia, "Times New Roman", serif;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
